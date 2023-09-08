@@ -1,0 +1,252 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    z-index: 3;
+    margin-top: 7vh;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.generationcontainer{
+    display: flex;
+    width: 80vw;
+    gap: 20px;
+}
+
+button{
+    height: min-content;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 80vh;
+    padding: 20px 0px 20px 0px;
+    width: 80vw;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px white;
+}
+
+.row{
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.card{
+    display: none;
+    justify-content: right;
+    width: 14vw;
+    height: 24vh;
+}
+
+select{
+    height: min-content;
+}
+
+.form-select{
+    width: 13vw;
+}
+
+.title{
+    flex-grow: 1;
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 3px 22px rgb(135, 187, 190);
+    margin-right:6vw;
+}
+
+.form-check-inline{
+    text-align: center;
+    position: relative;
+    bottom: 5vh;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    gap: 50px;
+}
+
+.downloadimg{
+    display: none;
+    cursor: pointer;
+    width: 2vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 23vh;
+    left: 11.5vw;
+}
+
+.cardcontainer{
+    width: min-content;
+}
+
+.radiofields{
+    display: flex;
+    gap: 50px;
+}
+
+.head{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head button{
+    margin-right: auto;
+}
+
+.sectionop{
+    display: flex;
+    gap: 50px;
+}
+
+#btn3{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        margin-top: 3vh;
+        overflow-x: hidden;
+        height: 95vh;
+    }
+
+    .generationcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: min-content;
+        width: 100vw;
+    }
+
+    .downloadimg{
+        width: 4.5vw;
+        height: 3vh;
+        position: relative;
+        bottom: 11.5vh;
+        left: 20vw;
+    }
+
+    #expand{
+        z-index: 1;
+        width: 85vw;
+    }
+    .form-control{
+        width: 41vw;
+    }
+    .form-select{
+        width: 43vw;
+    }
+
+    .card{
+        width: 25vw;
+        height: 12vh;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-right: 0vw;
+    }
+
+    #btn1{
+        display: none;
+    }
+
+    #btn3{
+        width: 40vw;
+        display: block;
+    }
+
+    .btnrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+    }
+
+    .cards{
+        width: 86vw;
+    }
+
+    button{
+        width: 30vw;
+    }
+
+    .form-check-inline{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: start;
+    }
+
+    .form-check-input{
+        margin-left: 20vw;
+    }
+
+    .radiofields{
+        flex-direction: column;
+        gap: 0px;
+        position: relative;
+        left: 25vw;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .card{
+        width: 25vw;
+        height: 17vh;
+    }
+
+    .downloadimg{
+        width: 4vw;
+        height: 3.5vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 16.5vh;
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width:768px) and (min-height:680px) {
+    .card{
+        height: 15vh;
+        width: 28vw;
+    }
+
+    .downloadimg{
+        width: 5vw;
+        height: 3vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 14.5vh;
+        left: 22vw;
+    }
+}
+
